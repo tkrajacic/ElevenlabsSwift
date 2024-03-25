@@ -288,11 +288,11 @@ public struct Voice: Codable, Identifiable, Hashable {
 public struct SpeechRequest: Codable {
     public let text: String
     public let voice_settings: [String: Int]
-    public let model: String?
+    public let model_id: String?
 
     public init(text: String, voice_settings: [String : Int], model: String?) {
         self.text = text
         self.voice_settings = voice_settings
-        self.model = model
+        self.model_id = model
     }
 }
